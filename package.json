@@ -2,7 +2,6 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://shwetadubey23.github.io/my-portfolio",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.16.4",

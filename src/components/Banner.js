@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import { ArrowRightCircle, Download, GeoAlt, Envelope, Telephone } from 'react-bootstrap-icons';
 import { GeoAlt, Envelope, Telephone } from 'react-bootstrap-icons';
+import heroImage from "../assets/img/project-img2.png";
 
 // Smooth sliding Role Rotator with blur and gradient transition
 const RoleRotator = () => {
@@ -98,7 +99,7 @@ export const Banner = () => {
               <div className="image-backdrop-glow"></div>
               <div className="avatar-frame">
                 <img
-                  src={`${process.env.PUBLIC_URL || ''}/src/assets/img/project-img2.png`}
+                  src={heroImage}
                   alt="Shweta Dubey - React Native Developer"
                   className="hero-avatar"
                   loading="eager"

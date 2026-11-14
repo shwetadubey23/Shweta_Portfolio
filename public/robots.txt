@@ -1,0 +1,6 @@
+# Google, Bing, and Search Engine Web Crawlers
+User-agent: *
+Allow: /
+
+# Sitemap URL
+Sitemap: https://namandevelopment.github.io/my-portfolio/sitemap.xml

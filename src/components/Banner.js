@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle, Download, GeoAlt, Envelope, Telephone } from 'react-bootstrap-icons';
+// import { ArrowRightCircle, Download, GeoAlt, Envelope, Telephone } from 'react-bootstrap-icons';
+import { GeoAlt, Envelope, Telephone } from 'react-bootstrap-icons';
 
 // Smooth sliding Role Rotator with blur and gradient transition
 const RoleRotator = () => {
@@ -39,7 +40,7 @@ const RoleRotator = () => {
 };
 
 export const Banner = () => {
-  const resumeUrl = `${process.env.PUBLIC_URL || ''}/Resume.pdf`;
+  // const resumeUrl = `${process.env.PUBLIC_URL || ''}/Resume.pdf`;
 
   return (
     <section className="banner" id="home">
@@ -75,7 +76,7 @@ export const Banner = () => {
               </a>
             </div>
 
-            <div className="hero-action-buttons">
+            {/* <div className="hero-action-buttons">
               <a href="#projects" className="btn-primary-glow">
                 <span>Explore Projects</span> <ArrowRightCircle size={20} className="ms-2" />
               </a>
@@ -88,7 +89,7 @@ export const Banner = () => {
               >
                 <Download size={18} className="me-2" /> <span>Download Resume</span>
               </a>
-            </div>
+            </div> */}
           </Col>
 
           {/* Right Column: Rock-Solid Avatar Presentation (Zero Blinking) */}

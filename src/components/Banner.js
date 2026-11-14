@@ -100,7 +100,7 @@ export const Banner = () => {
               <div className="avatar-frame">
                 <img
                   src={heroImage}
-                  alt="Shweta Dubey - React Native Developer"
+                  alt="Portfolio project preview"
                   className="hero-avatar"
                   loading="eager"
                   decoding="sync"

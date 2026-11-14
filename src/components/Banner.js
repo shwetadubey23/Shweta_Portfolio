@@ -8,7 +8,7 @@ import heroImage from "../assets/img/project-img2.png";
 // Smooth sliding Role Rotator with blur and gradient transition
 const RoleRotator = () => {
   const roles = [
-    "React Native Developer",
+    "Full Stack Developer",
     "Mobile Application Architect",
     "iOS & Android Specialist",
     "ZEGOCLOUD RTC & Live Streaming",

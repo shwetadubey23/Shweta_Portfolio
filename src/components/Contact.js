@@ -1,23 +1,30 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { GeoAlt, Envelope, Telephone, Linkedin, Github, Send } from "react-bootstrap-icons";
+import {
+  GeoAlt,
+  Envelope,
+  Telephone,
+  Linkedin,
+  Github,
+  Send,
+} from "react-bootstrap-icons";
 
 export const Contact = () => {
   const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send Message');
+  const [buttonText, setButtonText] = useState("Send Message");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
-      [category]: value
+      [category]: value,
     });
   };
 
@@ -34,32 +41,39 @@ export const Contact = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Accept": "application/json"
+          Accept: "application/json",
         },
         body: JSON.stringify({
           name: `${formDetails.firstName} ${formDetails.lastName}`.trim(),
           email: formDetails.email,
           phone: formDetails.phone,
-          message: formDetails.message
+          message: formDetails.message,
         }),
       });
 
       if (response.ok) {
         setFormDetails(formInitialDetails);
-        setStatus({ success: true, message: 'Message sent successfully! Naman will get back to you soon.' });
+        setStatus({
+          success: true,
+          message:
+            "Message sent successfully! Naman will get back to you soon.",
+        });
         setButtonText("Sent Successfully");
       } else {
         const errorData = await response.json().catch(() => ({}));
         setStatus({
           success: false,
-          message: errorData?.errors?.[0]?.message || 'Please configure Formspree ID or contact directly via email.'
+          message:
+            errorData?.errors?.[0]?.message ||
+            "Please configure Formspree ID or contact directly via email.",
         });
         setButtonText("Try Again");
       }
     } catch (err) {
       setStatus({
         success: false,
-        message: 'Network error. Please reach out directly to dubeyshweta0246@gmail.com'
+        message:
+          "Network error. Please reach out directly to dubeyshweta0246@gmail.com",
       });
       setButtonText("Try Again");
     }
@@ -72,7 +86,8 @@ export const Contact = () => {
           <span className="section-subtitle">Get In Touch</span>
           <h2 className="section-title">Let’s Build Something Great</h2>
           <p className="section-description">
-            Looking for a React Native Developer to architect or scale your mobile application? Feel free to reach out.
+            Looking for a Freelance Software Developer to architect or scale your
+            Mobile Application & Web Application? Feel free to reach out.
           </p>
         </div>
 
@@ -81,7 +96,13 @@ export const Contact = () => {
             <div className="contact-info-card h-100">
               <h3 className="contact-card-title">Contact Information</h3>
               <p className="contact-card-desc">
-                I’m open to mobile engineering roles, high-scale cross-platform consulting, and technical leadership opportunities.
+                I’m open to mobile engineering roles, high-scale cross-platform
+                consulting, and technical leadership opportunities.
+                <h5 className="award-name1" style={{ marginTop: "10px", color: "#4fececa0", fontSize: "16px" }}>
+                  Have a project in mind? Tell me what you need and I’ll reply
+                  with an approach, timeline and a small first milestone so you
+                  can see my work before committing.
+                </h5>
               </p>
 
               <div className="contact-meta-list">
@@ -91,7 +112,9 @@ export const Contact = () => {
                   </div>
                   <div>
                     <span className="meta-label">Location</span>
-                    <p className="meta-val">VAISHALI NAGAR, JAIPUR, RAJASTHAN, India</p>
+                    <p className="meta-val">
+                      VAISHALI NAGAR, JAIPUR, RAJASTHAN, India
+                    </p>
                   </div>
                 </div>
 
@@ -101,7 +124,10 @@ export const Contact = () => {
                   </div>
                   <div>
                     <span className="meta-label">Email</span>
-                    <a href="mailto:dubeyshweta0246@gmail.com" className="meta-val link-val">
+                    <a
+                      href="mailto:dubeyshweta0246@gmail.com"
+                      className="meta-val link-val"
+                    >
                       dubeyshweta0246@gmail.com
                     </a>
                   </div>
@@ -125,7 +151,12 @@ export const Contact = () => {
                   </div>
                   <div>
                     <span className="meta-label">LinkedIn</span>
-                    <a href="https://www.https://www.linkedin.com/in/shweta-d-b1629a242//" target="_blank" rel="noreferrer" className="meta-val link-val">
+                    <a
+                      href="https://www.https://www.linkedin.com/in/shweta-d-b1629a242//"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="meta-val link-val"
+                    >
                       https://www.linkedin.com/in/shweta-d-b1629a242/
                     </a>
                   </div>
@@ -137,7 +168,12 @@ export const Contact = () => {
                   </div>
                   <div>
                     <span className="meta-label">GitHub</span>
-                    <a href="https://github.com/shwetadubey23" target="_blank" rel="noreferrer" className="meta-val link-val">
+                    <a
+                      href="https://github.com/shwetadubey23"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="meta-val link-val"
+                    >
                       https://github.com/shwetadubey23
                     </a>
                   </div>
@@ -159,7 +195,9 @@ export const Contact = () => {
                       required
                       value={formDetails.firstName}
                       placeholder="e.g. John"
-                      onChange={(e) => onFormUpdate('firstName', e.target.value)}
+                      onChange={(e) =>
+                        onFormUpdate("firstName", e.target.value)
+                      }
                     />
                   </Col>
                   <Col sm={6}>
@@ -169,7 +207,7 @@ export const Contact = () => {
                       className="form-control-custom"
                       value={formDetails.lastName}
                       placeholder="e.g. Doe"
-                      onChange={(e) => onFormUpdate('lastName', e.target.value)}
+                      onChange={(e) => onFormUpdate("lastName", e.target.value)}
                     />
                   </Col>
                   <Col sm={6}>
@@ -180,7 +218,7 @@ export const Contact = () => {
                       required
                       value={formDetails.email}
                       placeholder="john@example.com"
-                      onChange={(e) => onFormUpdate('email', e.target.value)}
+                      onChange={(e) => onFormUpdate("email", e.target.value)}
                     />
                   </Col>
                   <Col sm={6}>
@@ -190,7 +228,7 @@ export const Contact = () => {
                       className="form-control-custom"
                       value={formDetails.phone}
                       placeholder="+91 9876543210"
-                      onChange={(e) => onFormUpdate('phone', e.target.value)}
+                      onChange={(e) => onFormUpdate("phone", e.target.value)}
                     />
                   </Col>
                   <Col xs={12}>
@@ -201,7 +239,7 @@ export const Contact = () => {
                       required
                       value={formDetails.message}
                       placeholder="Tell me about your project, team, or opportunity..."
-                      onChange={(e) => onFormUpdate('message', e.target.value)}
+                      onChange={(e) => onFormUpdate("message", e.target.value)}
                     ></textarea>
                   </Col>
                   <Col xs={12}>
@@ -212,7 +250,9 @@ export const Contact = () => {
                   </Col>
                   {status.message && (
                     <Col xs={12}>
-                      <div className={`status-alert ${status.success ? 'alert-success' : 'alert-danger'}`}>
+                      <div
+                        className={`status-alert ${status.success ? "alert-success" : "alert-danger"}`}
+                      >
                         {status.message}
                       </div>
                     </Col>

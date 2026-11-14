@@ -1015,6 +1015,12 @@ nav.navbar.scrolled {
   margin-bottom: 4px;
   color: #ffffff;
 }
+.award-name1 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+  color: #ffffffe6;
+}
 
 .award-issuer {
   font-family: var(--font-mono);

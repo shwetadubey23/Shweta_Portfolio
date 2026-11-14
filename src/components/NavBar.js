@@ -90,7 +90,7 @@ export const NavBar = () => {
             <div className="brand-badge me-2">SD</div>
             <div className="brand-text">
               <span className="brand-name">Shweta Dubey</span>
-              <span className="brand-subtitle"> React Native Developer</span>
+              <span className="brand-subtitle"> Software Developer</span>
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">

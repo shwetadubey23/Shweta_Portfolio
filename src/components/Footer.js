@@ -12,7 +12,7 @@ export const Footer = () => {
               <span className="brand-name">Shweta Dubey</span>
             </div>
             <p className="footer-tagline mb-0">
-              React Native Developer • 2+ Years of Mobile Engineering Excellence
+              Freelance Software Developer • 3+ Years of Software & Mobile Engineering Excellence
             </p>
           </Col>
 

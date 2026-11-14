@@ -23,14 +23,14 @@ export const Experience = () => {
               <div className="card-inner">
                 <div className="d-flex flex-wrap justify-content-between align-items-start mb-3">
                   <div>
-                    <div className="company-tag">CRM Landing Softwares • Ajmer</div>
-                    <h3 className="role-title">React Native Developer</h3>
+                    <div className="company-tag">Eoxys IT Solution   • Jaipur, Rajasthan </div>
+                    <h3 className="role-title">Full Stack Developer</h3>
                     <div className="promotion-pill">
                       <ArrowUpRightCircle size={14} className="me-1" />
                       <span>Current Organization • Mobile Engineering Lead</span>
                     </div>
                   </div>
-                  <span className="duration-pill">Sep 2024 – Present</span>
+                  <span className="duration-pill">Sep 2023 – Present</span>
                 </div>
 
                 <div className="experience-highlights">
@@ -84,13 +84,13 @@ export const Experience = () => {
                 <div className="d-flex flex-wrap justify-content-between align-items-start mb-3">
                   <div>
                     <div className="company-tag">Comfygen Technologies • Jaipur</div>
-                    <h3 className="role-title">React Native Developer</h3>
+                    <h3 className="role-title">Full Stack Developer</h3>
                     <div className="promotion-pill">
                       <ArrowUpRightCircle size={14} className="me-1" />
-                      <span>Promoted from Intern (Oct 2023) → Permanent Developer (Feb 2024)</span>
+                      <span>Promoted from Intern (Nov 2022) → Permanent Developer ( May 2023)</span>
                     </div>
                   </div>
-                  <span className="duration-pill secondary">Feb 2024 – Aug 2024</span>
+                  <span className="duration-pill secondary">Jul 2022 – May 2023 </span>
                 </div>
 
                 <div className="experience-highlights">
@@ -153,7 +153,7 @@ export const Experience = () => {
                     <div className="company-tag">Comfygen Technologies • Jaipur</div>
                     <h3 className="role-title">React Native Intern</h3>
                   </div>
-                  <span className="duration-pill secondary">Oct 2023 – Jan 2024</span>
+                  <span className="duration-pill secondary">Jul 2022 – Nov 2022</span>
                 </div>
 
                 <div className="experience-highlights">
@@ -200,7 +200,7 @@ export const Experience = () => {
                     <Award size={22} className="award-icon" />
                     <div>
                       <h5 className="award-name">Certificate of Appreciation</h5>
-                      <p className="award-issuer">Comfygen Technologies • May 2024</p>
+                      <p className="award-issuer">Comfygen Technologies • May 2023</p>
                       <p className="award-desc">Recognized for invaluable contribution and high-impact engineering delivery to the organization.</p>
                     </div>
                   </div>
